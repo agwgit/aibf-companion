@@ -14,11 +14,11 @@ export const weekContent = {
         title: 'Etiquette & Mindset',
         hint: 'Self‑serve',
         content: "Respect the tool → better prompts = better results. • Treat GPT like a coach, not a vending machine. • Iteration > perfection. Keep a prompt journal.",
-        hasPrompts: true,
-        prompts: [
-          { icon: "✋", text: "if you've had GPT confidently make something up that was wrong" },
-          { icon: "🔄", text: "if you asked GPT to revise one part and it changed something else too" },
-          { icon: "me", text: "if you've rage‑quit a GPT chat" }
+        hasPrompts: false,
+        copyablePrompts: [
+          { title: "✋", prompt: "✋" },
+          { title: "🔄", prompt: "🔄" },
+          { title: "😤", prompt: "😤" }
         ]
       },
       {
@@ -26,10 +26,10 @@ export const weekContent = {
         title: 'Access',
         hint: 'Setup',
         content: "Enable GPT‑5 (upgrade if needed). • Expectation: GPT will be used throughout the course.",
-        hasPrompts: true,
-        prompts: [
-          { icon: "💳", text: "if you're on GPT‑5 (🔒 if not yet)" },
-          { icon: "✅", text: "if you've ever pasted GPT output directly into a real project" }
+        hasPrompts: false,
+        copyablePrompts: [
+          { title: "💳", prompt: "💳" },
+          { title: "✅", prompt: "✅" }
         ]
       },
       {
@@ -37,12 +37,13 @@ export const weekContent = {
         title: 'Why / Expectations',
         hint: 'Orientation',
         content: "Framework arc: Origin → Voice → Product → Identity → Launch. • Participation: interactive sessions, prompt journaling, sharing progress.",
-        hasPrompts: true,
-        prompts: [
-          { icon: "⚙️", text: "if you've used system prompts or custom instructions" },
-          { icon: "🎨", text: "if you've designed in Figma/Canva/Photoshop" },
-          { icon: "🤖", text: "if you've built an automation in Zapier/Make/Notion" },
-          { icon: "📐", text: "if you've written or copy‑pasted code • 🧩 if you've heard of JSON" }
+        hasPrompts: false,
+        copyablePrompts: [
+          { title: "⚙️", prompt: "⚙️" },
+          { title: "🎨", prompt: "🎨" },
+          { title: "🤖", prompt: "🤖" },
+          { title: "📐", prompt: "📐" },
+          { title: "🧩", prompt: "🧩" }
         ]
       },
       {
@@ -50,10 +51,10 @@ export const weekContent = {
         title: 'Brand Scanner',
         hint: 'Pre‑work',
         content: "Complete your Brand Scanner (if not already). • Debrief: pick 2 surprising and 2 confirming words.",
-        hasPrompts: true,
-        prompts: [
-          { icon: "🔍", text: "if you've taken a brand archetype quiz" },
-          { icon: "📊", text: "if you've done customer interviews or surveys" }
+        hasPrompts: false,
+        copyablePrompts: [
+          { title: "🔍", prompt: "🔍" },
+          { title: "📊", prompt: "📊" }
         ]
       }
     ]
