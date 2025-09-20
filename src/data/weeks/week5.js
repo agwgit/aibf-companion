@@ -1,4 +1,4 @@
-// Week 5 - Launch (Updated with Enhanced BCF Content)
+// Week 5 - Launch (Updated with Engaging Content + Checklist)
 // Retrofitted Prompts with Drive Save + Checkpoints (FP as Final Console)
 
 export const week5 = {
@@ -6,14 +6,21 @@ export const week5 = {
   label: 'Week 5',
   title: 'Week 5 — Launch',
   subtitle: 'Retrofitted Prompts with Drive Save + Checkpoints ([Founderpath](https://founderpath.com) as Final Console)',
-  estimatedTime: '150 min',
-  difficulty: 'Advanced',
+  estimatedTime: '120 min',
+  difficulty: 'Intermediate',
+  introduction: `You've given your brand a voice, a product loop, an identity, and a visual system. Now comes the most important test: launching it into the world.
+
+This week is about pulling all the pieces together into a package you can actually use. You'll compress your story, finalize your Brand Constellation File, polish it with Founderpath, and translate it into decks, posts, and even a landing page.
+
+Think of this like the dress rehearsal before opening night. The audience doesn't see the edits, the reworks, or the rough drafts — they only see what you choose to ship.`,
   sections: [
     {
       id: 'w5-move1',
       title: 'Move 1 — Story Compression',
-      hint: 'Synthesis',
-      content: `Using your Strategy Seal + chant, compress into a one-line story and generate hooks for launch.`,
+      hint: 'Distillation',
+      content: `**Why this matters:** When you launch, you don't get 10 minutes to explain yourself. You get one line. This move distills your brand's promise into a single sentence, then stretches it into 10 hooks you can deploy across platforms.
+
+If your story feels weak here, it won't survive the scroll.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -25,17 +32,17 @@ Return one line only.
 Then → Generate 10 hooks (≤90 chars) each with 2 hashtags.
 Return as a simple list.
 
-✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc**.`
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc and paste them back here** so GPT has context. Then say: Next, Move 2.`
         }
       ]
     },
     {
       id: 'w5-move2',
-      title: 'Move 2 — Compile BCF (Executables Only)',
-      hint: 'Assets',
-      content: `Generate 5 executable assets for your Brand Constellation Files.
+      title: 'Move 2 — Brand Constellation Files (BCF)',
+      hint: 'Executables',
+      content: `**Why this matters:** Your BCF is your cartridge — a set of executable files that make your brand portable and repeatable. This is where you turn abstract choices (voice, visuals, hooks) into JSONs, CSVs, and clean docs anyone can plug into.
 
-**Important:** Copy outputs directly into BCF doc (no edits).`,
+Piece by piece, then as a consolidated package, then finally as a full Brand Constellation File — your single source of truth.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -77,73 +84,134 @@ Return JSON only.
 Fields: pacing, line_length_hint, emoji_policy, CTA_style.
 Return JSON only.
 
-✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc**.`
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc** and continue to the next prompt.`
         },
         {
           title: "Prompt F — Consolidated BCF Package",
-          prompt: `Combine all five Brand Constellation Files into one unified package.
+          prompt: `Create a consolidated Brand Constellation File package that combines all previous outputs into a single, organized JSON structure:
 
-Artifacts to include:
-- Visual_DNA.json
-- Voice_Engine.json
-- Name_Stack.csv
-- Hook_Arsenal.json
-- Platform_Remix_Rules.json
+{
+  "brand_metadata": {
+    "name": "[brand name]",
+    "strategy_seal": "[5-7 word distinction]",
+    "one_line_story": "[from Move 1]",
+    "created_date": "[today's date]"
+  },
+  "visual_dna": [Visual_DNA.json content],
+  "voice_engine": [Voice_Engine.json content], 
+  "name_stack": [Name_Stack.csv converted to JSON array],
+  "hook_arsenal": [Hook_Arsenal.json content],
+  "platform_remix_rules": [Platform_Remix_Rules.json content]
+}
 
-Return them in a clean copy-paste format.
+Return the complete consolidated JSON only.
 
-✅ Review these results. Edit if needed. If approved, **save the full package into your Google Drive doc**.`
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc** and continue to the next prompt.`
         },
         {
-          title: "Prompt G — Full Brand Constellation File",
-          prompt: `Generate a complete Brand Constellation File in JSON format, modeled after a professional schema. Include:
-- meta {owner, version, created_date, updated_date}
-- brand_basics {name, tagline, mission, audience}
-- visual_dna {colors, typefaces, textures, shapes, symbols, image_prompt_modifiers}
-- voice_engine {persona_prompt, tone_adjectives, rhythm_rules, banned_words, formality_score}
-- name_stack {category, name, notes}
-- hook_arsenal {awareness, launch, nurture}
-- platform_remix_rules {instagram, linkedin, youtube, tiktok}
-- myth_maker, product_as_artifact, business_mirror, enemy_framer (skeleton fields if not filled)
-- governance {changelog, contributors}
+          title: "Prompt G — Full Brand Constellation File Schema",
+          prompt: `Generate the complete Brand Constellation File with professional schema structure:
 
-✅ Review these results. Edit if needed. If approved, **save the full JSON file into your Google Drive doc**. This becomes your single source of truth.`
+Create a comprehensive BCF that includes:
+- Executive summary section
+- All previous JSON components
+- Usage instructions for each component
+- Integration guidelines for developers/designers
+- Version control metadata
+- Export formats (JSON, CSV, markdown)
+
+Format as a professional technical document that could be handed to any agency or developer.
+
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc and paste them back here** so GPT has context. Then say: Next, Move 3.`
         }
       ]
     },
     {
       id: 'w5-move3',
-      title: 'Move 3 — Draft 5 Posts',
-      hint: 'Content',
-      content: `Create platform-specific posts for IG, LinkedIn, YouTube Community, TikTok, and 1 wildcard.`,
+      title: 'Move 3 — Draft 5 Cross-Platform Posts',
+      hint: 'Content Creation',
+      content: `**Why this matters:** This is where theory touches reality. You'll use your hooks, voice, and visuals to create five raw posts — one for each major platform. They don't need to be perfect yet. They need to be real enough to test.
+
+Think of them as launch dummies — once Founderpath refines them, they're ready to fly.`,
       hasPrompts: false,
       copyablePrompts: [
         {
           title: "5 Cross-platform posts",
-          prompt: `Create platform-specific posts:
-- IG, LinkedIn, YouTube Community, TikTok, 1 wildcard
-- Each: hook + caption (120-180 chars) + 3 hashtags + image_prompt aligned to Visual_DNA
+          prompt: `Create platform-specific posts using my BCF components:
 
-✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc**.`
+**Instagram Post:**
+- Hook from Hook_Arsenal
+- Caption (120-180 chars) in Voice_Engine tone
+- 3 hashtags aligned to brand
+- Image prompt using Visual_DNA modifiers
+
+**LinkedIn Post:**
+- Professional hook variation
+- Caption (150-200 chars) with business focus
+- 3 professional hashtags
+- Image prompt for business context
+
+**YouTube Community Post:**
+- Engaging hook for video audience
+- Caption (100-150 chars) with video tease
+- 3 YouTube-friendly hashtags
+- Thumbnail image prompt
+
+**TikTok Post:**
+- Trendy hook variation
+- Caption (80-120 chars) with energy
+- 3 trending hashtags
+- Video concept description
+
+**Wildcard Platform (choose one: Twitter/X, Pinterest, or Newsletter):**
+- Platform-appropriate hook
+- Optimized caption length
+- Relevant hashtags
+- Visual concept
+
+Each post should feel authentically aligned to my brand voice while respecting platform culture.
+
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc and paste them back here** so GPT has context. Then say: Next, Move 4.`
         }
       ]
     },
     {
       id: 'w5-move4',
       title: 'Move 4 — Founderpath Console Pass',
-      hint: 'Integration',
-      content: `Export your full Google Drive doc and process through [Founderpath](https://founderpath.com) for business-ready refinement.`,
+      hint: 'Polish',
+      content: `**Why this matters:** GPT can generate, Gamma can package, but Founderpath is where you reality-check. This is your final console — upload your BCF, draft deck, and draft posts. FP will rewrite, validate, and sharpen them into business-ready assets.
+
+This is the difference between draft energy and executive polish.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Founderpath Processing",
-          prompt: `Export your full Google Drive doc (with Moves 1–3 included) as a single file.
+          title: "Founderpath Refinement Package",
+          prompt: `Prepare a comprehensive package for [Founderpath](https://founderpath.com) refinement:
 
-Upload that file into Founderpath with the following prompt:
+**Upload Package Contents:**
+1. Complete Brand Constellation File (from Move 2)
+2. Draft posts from all 5 platforms (from Move 3)
+3. One-line story + 10 hooks (from Move 1)
+4. Strategy Seal and brand voice summary
 
-"This is my Brand Constellation File, Deck Outline, and Draft Posts. Please refine these into business-ready slides, evaluate and rewrite posts (mark Ready or Rewrite), and suggest one additional launch asset (press release, founder note, or investor one-pager)."
+**Founderpath Instructions:**
+"Please review and refine this brand package for executive presentation. Focus on:
+- Sharpening the one-line story for maximum impact
+- Polishing all social posts for professional deployment
+- Validating BCF components for business use
+- Creating one additional launch asset (email, press release, or pitch deck bullets)
+- Ensuring consistency across all brand touchpoints"
 
-✅ Once FP delivers results: Review them. Edit if needed. Save back into your Drive doc.`
+**Expected Deliverables from FP:**
+- Refined one-line story
+- 5 polished, deployment-ready posts
+- Validated and enhanced BCF
+- 1 bonus launch asset
+- Executive summary of brand positioning
+
+Visit [Founderpath](https://founderpath.com) to upload your package and receive professional refinements.
+
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc and paste them back here** so GPT has context. Then say: Next, Move 5.`
         }
       ]
     },
@@ -151,45 +219,114 @@ Upload that file into Founderpath with the following prompt:
       id: 'w5-move5',
       title: 'Move 5 — Gamma Deck Build',
       hint: 'Presentation',
-      content: `Take FP-refined outputs and build your 15-slide Constellation Deck in Gamma.`,
+      content: `**Why this matters:** Once FP has cleaned your content, Gamma becomes your stage. This move builds your 15-slide Brand Constellation Deck, with the polish you'd expect in a boardroom or pitch.
+
+Gamma doesn't replace FP — it showcases FP's refinements in a visual package you can share.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Constellation Deck Creation",
-          prompt: `Take FP-refined outputs and feed them into Gamma to build your 15-slide Constellation Deck.
+          title: "Brand Constellation Deck Outline",
+          prompt: `Create a 15-slide Brand Constellation Deck outline using my FP-refined content:
 
-Slides to include:
-- Intro + recap
-- Guide vs. System
-- Constellation File overview (executables only)
-- Moves 1–4 outputs
-- Closing: next steps + growth cycles
+**Slide Structure:**
+1. **Title Slide** - Brand name + refined one-line story
+2. **The Challenge** - Market problem/opportunity
+3. **Our Solution** - Strategy Seal + core offering
+4. **Brand Voice** - Personality + tone examples
+5. **Visual Identity** - Colors, fonts, visual DNA showcase
+6. **Target Audience** - Who we serve + why they care
+7. **Product/Service Loop** - Customer journey visualization
+8. **Competitive Position** - Where we stand + differentiation
+9. **Brand Toolkit** - Names, symbols, assets overview
+10. **Content Strategy** - Platform approach + sample posts
+11. **Launch Plan** - Go-to-market timeline
+12. **Success Metrics** - How we measure brand impact
+13. **Brand Guidelines** - Usage rules + consistency standards
+14. **Next Steps** - Implementation roadmap
+15. **Contact/CTA** - How to engage with the brand
 
-✅ Review the deck. Edit in Gamma as needed. Save final version to your Drive doc.`
+For each slide, provide:
+- Slide title
+- Key bullet points (3-5 max)
+- Visual suggestion
+- Speaker notes
+
+Format for easy import into Gamma or similar presentation tools.
+
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc and paste them back here** so GPT has context. Then say: Next, Move 6.`
         }
       ]
     },
     {
       id: 'w5-move6',
       title: 'Move 6 — (Optional) Deepsite Quick Page',
-      hint: 'Website',
-      content: `Optional: Spin up a quick landing page aligned to your BCF using Deepsite.`,
+      hint: 'Landing Page',
+      content: `**Why this matters:** Want to go further? Deepsite can spin up a quick, cinematic landing page aligned to your Visual DNA. This is extra credit — not required — but it can give you a live, public artifact of your brand within hours.
+
+A site that looks award-winning from day one sets the tone for everything else you build.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Landing Page Creation",
-          prompt: `Optional: Spin up a quick landing page aligned to your BCF. Take the entire file and paste it into Deepsite.
+          title: "Deepsite Landing Page Brief",
+          prompt: `Create a comprehensive brief for a Deepsite landing page:
 
-Build an award-winning website with high-end cinematic level polish (no corny visuals, tacky effects) with the following elements:
-- Hero H1 (≤7 words)
-- Subhead (≤18 words)
-- 3 short benefits (≤6 words each)
-- CTA (≤3 words)
-- Section titles for About / Offer / Proof
+**Page Concept:**
+- One-page cinematic brand showcase
+- Aligned to Visual_DNA color palette and typography
+- Showcases refined one-line story prominently
+- Professional but personality-driven
 
-✅ Review this draft. Edit if needed. Save to Drive if you want to keep it.`
+**Content Sections:**
+1. **Hero Section** - One-line story + compelling visual
+2. **About** - Brand essence + Strategy Seal explanation
+3. **Approach** - How we work/what makes us different
+4. **Portfolio/Examples** - Sample work or case studies
+5. **Contact** - Clear CTA + contact information
+
+**Design Requirements:**
+- Use Visual_DNA colors as primary palette
+- Implement Visual_DNA typography hierarchy
+- Include brand symbols/icons from BCF
+- Mobile-responsive and fast-loading
+- Award-winning aesthetic quality
+
+**Technical Specifications:**
+- Single-page scroll experience
+- Smooth animations and transitions
+- SEO-optimized for brand name
+- Social media preview optimization
+- Contact form integration
+
+**Content Guidelines:**
+- All copy in established brand voice
+- Consistent with FP-refined messaging
+- Professional but approachable tone
+- Clear value proposition throughout
+
+This brief can be used with Deepsite or any premium web development service to create a launch-ready brand presence.
+
+✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc**.`
         }
       ]
+    },
+    {
+      id: 'w5-checklist',
+      title: '✅ Week 5 Completion Checklist',
+      hint: 'Completion',
+      content: `By the end of Week 5, you should have:
+
+• **A one-line story + 10 hooks**
+• **A full Brand Constellation File (executables + consolidated JSON)**
+• **Five draft posts across platforms**
+• **FP-refined posts, deck bullets, and one extra launch asset**
+• **A Gamma deck polished and ready to share**
+• **(Optional) A quick Deepsite landing page**
+
+If you've got this, you're not just "building a brand" — you've launched one. You have the cartridge, the deck, and the posts to make it real.
+
+Congratulations! Your brand is now live and ready to make its mark in the world. 🚀`,
+      hasPrompts: false,
+      copyablePrompts: []
     }
   ]
 };
