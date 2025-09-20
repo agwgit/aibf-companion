@@ -1,4 +1,4 @@
-// Week 3 - Identity
+// Week 3 - Identity (Updated with Engaging Content + Checklist)
 // Retrofitted Prompts with Drive Save + Checkpoints
 
 export const week3 = {
@@ -8,12 +8,17 @@ export const week3 = {
   subtitle: 'Retrofitted Prompts with Drive Save + Checkpoints',
   estimatedTime: '75 min',
   difficulty: 'Beginner',
+  introduction: `Up to now you've shaped your voice (how you sound) and your product position (where you stand). Now it's time to make your brand recognizable in the wild. Week 3 is about naming, handles, and the visual starter kit — the surface-level cues people remember and repeat.
+
+Think of this like choosing the outfit your brand will walk into the party wearing. Does it fit? Is it memorable? Does it start conversations? That's what we're building here.`,
   sections: [
     {
       id: 'w3-move1',
-      title: 'Move 1 — Generate Names',
+      title: 'Move 1 — Name Ideas',
       hint: 'Naming',
-      content: `Generate names for your products, series, or offers that align with your brand voice and Strategy Seal.`,
+      content: `**Why this matters:** A name is the first story you tell — often before you get to say anything else. It's not just a label; it's a signal of energy, taste, and intention.
+
+You're not looking for something "safe." You're looking for something that feels alive in your voice, speaks to your audience, and can stretch across contexts. Don't stop at the first clever idea — push until you've got 15 strong contenders.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -42,9 +47,11 @@ For each name, include a one-line explanation of why it fits my brand.
     },
     {
       id: 'w3-move2',
-      title: 'Move 2 — Find Handles',
+      title: 'Move 2 — Handles & Domains',
       hint: 'Digital',
-      content: `Find email or domain handles that fit your voice and check availability across platforms.`,
+      content: `**Why this matters:** A name that can't live online dies fast. Handles and domains are how your audience actually finds and shares you. They need to be consistent, simple, and recognizably yours.
+
+This step makes sure your identity isn't trapped in theory. It's about making sure the digital keys to your brand are available and practical to claim.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -75,9 +82,11 @@ Check for:
     },
     {
       id: 'w3-move3',
-      title: 'Move 3 — Brand Toolkit Audit',
+      title: 'Move 3 — Brand Toolkit Map',
       hint: 'Assessment',
-      content: `List your key brand pieces (best + backup) and create a 3-month roadmap for building out your brand toolkit.`,
+      content: `**Why this matters:** Every brand needs a kit of parts — logos, colors, fonts, voice, templates. But most startups either hoard too much or skip too much.
+
+This step helps you see what you already have, what's missing, and what you should prioritize next. It's not about perfection — it's about building a toolkit that grows with you, instead of holding you back.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -113,9 +122,11 @@ Give me a 3-month roadmap for building out my brand toolkit.
     },
     {
       id: 'w3-move4',
-      title: 'Move 4 — Simple Marks',
+      title: 'Move 4 — Symbol Set',
       hint: 'Symbols',
-      content: `Create simple marks (emoji, ASCII, icons) that represent your brand essence and can be used across different contexts.`,
+      content: `**Why this matters:** Symbols are shorthand. They give your brand character without a word being said. Emoji, ASCII marks, simple icon ideas — these are lightweight but powerful tools to start shaping recognition.
+
+You're not designing the final logo here. You're building a starter pack of visual cues that carry your brand's essence across platforms.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -151,6 +162,23 @@ For each symbol, explain why it connects to my brand and how I could use it.
 ✅ Review these results. Edit if needed. If approved, **add them to your Google Drive doc**.`
         }
       ]
+    },
+    {
+      id: 'w3-checklist',
+      title: '✅ Week 3 Completion Checklist',
+      hint: 'Completion',
+      content: `By the end of Week 3, you should have:
+
+• **15+ name options (with explanations for why they fit)**
+• **Handle + domain variations for your top 3 names**
+• **A clear Brand Toolkit map (what you have, what you need, what's next)**
+• **A starter symbol set: emojis, ASCII/text marks, and 2–3 icon ideas**
+
+If you've got this, your brand is no longer just a voice with a product — it's a recognizable identity. You're ready to be seen, remembered, and repeated.
+
+Ready for Week 4 where we'll bring your identity to life with visual design and style guidelines!`,
+      hasPrompts: false,
+      copyablePrompts: []
     }
   ]
 };
