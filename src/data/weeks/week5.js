@@ -1,4 +1,4 @@
-// Week 5 - Launch (Updated with Engaging Content + Checklist)
+// Week 5 - Launch (Updated with Engaging Content + 10-Slide Gamma Deck)
 // Retrofitted Prompts with Drive Save + Checkpoints (FP as Final Console)
 
 export const week5 = {
@@ -219,39 +219,34 @@ Visit [Founderpath](https://founderpath.com) to upload your package and receive 
       id: 'w5-move5',
       title: 'Move 5 — Gamma Deck Build',
       hint: 'Presentation',
-      content: `**Why this matters:** Once FP has cleaned your content, Gamma becomes your stage. This move builds your 15-slide Brand Constellation Deck, with the polish you'd expect in a boardroom or pitch.
+      content: `**Why this matters:** Once FP has cleaned your content, Gamma becomes your stage. This move builds your **10-slide Brand Constellation Deck**, streamlined to fit Gamma's free tier but still covering everything an investor, partner, or customer would need.
 
 Gamma doesn't replace FP — it showcases FP's refinements in a visual package you can share.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Brand Constellation Deck Outline",
-          prompt: `Create a 15-slide Brand Constellation Deck outline using my FP-refined content:
+          title: "Brand Constellation Deck Outline (10 Slides)",
+          prompt: `Create a 10-slide Brand Constellation Deck outline using my FP-refined content:
 
 **Slide Structure:**
-1. **Title Slide** - Brand name + refined one-line story
-2. **The Challenge** - Market problem/opportunity
-3. **Our Solution** - Strategy Seal + core offering
-4. **Brand Voice** - Personality + tone examples
-5. **Visual Identity** - Colors, fonts, visual DNA showcase
-6. **Target Audience** - Who we serve + why they care
-7. **Product/Service Loop** - Customer journey visualization
-8. **Competitive Position** - Where we stand + differentiation
-9. **Brand Toolkit** - Names, symbols, assets overview
-10. **Content Strategy** - Platform approach + sample posts
-11. **Launch Plan** - Go-to-market timeline
-12. **Success Metrics** - How we measure brand impact
-13. **Brand Guidelines** - Usage rules + consistency standards
-14. **Next Steps** - Implementation roadmap
-15. **Contact/CTA** - How to engage with the brand
+1. **Title Slide** – Brand name + refined one-line story
+2. **The Challenge** – Market problem/opportunity
+3. **Our Solution** – Strategy Seal + core offering
+4. **Brand Voice & Identity** – Personality, tone, colors, fonts, visual DNA
+5. **Target Audience** – Who we serve + why they care
+6. **Product/Service Loop** – Customer journey visualization
+7. **Competitive Position** – Differentiation vs. rivals
+8. **Brand Toolkit** – Names, symbols, assets overview
+9. **Launch & Content Strategy** – Go-to-market steps + posts
+10. **Next Steps & Contact** – Roadmap + CTA
 
 For each slide, provide:
 - Slide title
-- Key bullet points (3-5 max)
+- 3–5 bullet points
 - Visual suggestion
 - Speaker notes
 
-Format for easy import into Gamma or similar presentation tools.
+Format for easy import into Gamma or similar tools.
 
 ✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc and paste them back here** so GPT has context. Then say: Next, Move 6.`
         }
