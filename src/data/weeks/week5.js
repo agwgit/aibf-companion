@@ -1,4 +1,4 @@
-// Week 5 - Launch
+// Week 5 - Launch (Updated with Enhanced BCF Content)
 // Retrofitted Prompts with Drive Save + Checkpoints (FP as Final Console)
 
 export const week5 = {
@@ -6,13 +6,13 @@ export const week5 = {
   label: 'Week 5',
   title: 'Week 5 — Launch',
   subtitle: 'Retrofitted Prompts with Drive Save + Checkpoints ([Founderpath](https://founderpath.com) as Final Console)',
-  estimatedTime: '120 min',
-  difficulty: 'Intermediate',
+  estimatedTime: '150 min',
+  difficulty: 'Advanced',
   sections: [
     {
       id: 'w5-move1',
       title: 'Move 1 — Story Compression',
-      hint: 'Instruction',
+      hint: 'Synthesis',
       content: `Using your Strategy Seal + chant, compress into a one-line story and generate hooks for launch.`,
       hasPrompts: false,
       copyablePrompts: [
@@ -32,7 +32,7 @@ Return as a simple list.
     {
       id: 'w5-move2',
       title: 'Move 2 — Compile BCF (Executables Only)',
-      hint: 'Instruction',
+      hint: 'Assets',
       content: `Generate 5 executable assets for your Brand Constellation Files.
 
 **Important:** Copy outputs directly into BCF doc (no edits).`,
@@ -78,13 +78,43 @@ Fields: pacing, line_length_hint, emoji_policy, CTA_style.
 Return JSON only.
 
 ✅ Review these results. Edit if needed. If approved, **save them to your Google Drive doc**.`
+        },
+        {
+          title: "Prompt F — Consolidated BCF Package",
+          prompt: `Combine all five Brand Constellation Files into one unified package.
+
+Artifacts to include:
+- Visual_DNA.json
+- Voice_Engine.json
+- Name_Stack.csv
+- Hook_Arsenal.json
+- Platform_Remix_Rules.json
+
+Return them in a clean copy-paste format.
+
+✅ Review these results. Edit if needed. If approved, **save the full package into your Google Drive doc**.`
+        },
+        {
+          title: "Prompt G — Full Brand Constellation File",
+          prompt: `Generate a complete Brand Constellation File in JSON format, modeled after a professional schema. Include:
+- meta {owner, version, created_date, updated_date}
+- brand_basics {name, tagline, mission, audience}
+- visual_dna {colors, typefaces, textures, shapes, symbols, image_prompt_modifiers}
+- voice_engine {persona_prompt, tone_adjectives, rhythm_rules, banned_words, formality_score}
+- name_stack {category, name, notes}
+- hook_arsenal {awareness, launch, nurture}
+- platform_remix_rules {instagram, linkedin, youtube, tiktok}
+- myth_maker, product_as_artifact, business_mirror, enemy_framer (skeleton fields if not filled)
+- governance {changelog, contributors}
+
+✅ Review these results. Edit if needed. If approved, **save the full JSON file into your Google Drive doc**. This becomes your single source of truth.`
         }
       ]
     },
     {
       id: 'w5-move3',
       title: 'Move 3 — Draft 5 Posts',
-      hint: 'Instruction',
+      hint: 'Content',
       content: `Create platform-specific posts for IG, LinkedIn, YouTube Community, TikTok, and 1 wildcard.`,
       hasPrompts: false,
       copyablePrompts: [
@@ -101,15 +131,17 @@ Return JSON only.
     {
       id: 'w5-move4',
       title: 'Move 4 — Founderpath Console Pass',
-      hint: 'Instruction',
-      content: `Export your full Google Drive doc (with Moves 1–3 included) as a single file.
-
-Upload that file into [Founderpath](https://founderpath.com) with the following prompt:`,
+      hint: 'Integration',
+      content: `Export your full Google Drive doc and process through [Founderpath](https://founderpath.com) for business-ready refinement.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Founderpath Console Upload",
-          prompt: `"This is my Brand Constellation File, Deck Outline, and Draft Posts. Please refine these into business-ready slides, evaluate and rewrite posts (mark Ready or Rewrite), and suggest one additional launch asset (press release, founder note, or investor one-pager)."
+          title: "Founderpath Processing",
+          prompt: `Export your full Google Drive doc (with Moves 1–3 included) as a single file.
+
+Upload that file into Founderpath with the following prompt:
+
+"This is my Brand Constellation File, Deck Outline, and Draft Posts. Please refine these into business-ready slides, evaluate and rewrite posts (mark Ready or Rewrite), and suggest one additional launch asset (press release, founder note, or investor one-pager)."
 
 ✅ Once FP delivers results: Review them. Edit if needed. Save back into your Drive doc.`
         }
@@ -118,15 +150,15 @@ Upload that file into [Founderpath](https://founderpath.com) with the following 
     {
       id: 'w5-move5',
       title: 'Move 5 — Gamma Deck Build',
-      hint: 'Instruction',
-      content: `Take FP-refined outputs and feed them into Gamma to build your 15-slide Constellation Deck.
-
-**Link:** [Gamma](https://gamma.app)`,
+      hint: 'Presentation',
+      content: `Take FP-refined outputs and build your 15-slide Constellation Deck in Gamma.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Constellation Deck Build",
-          prompt: `Slides to include:
+          title: "Constellation Deck Creation",
+          prompt: `Take FP-refined outputs and feed them into Gamma to build your 15-slide Constellation Deck.
+
+Slides to include:
 - Intro + recap
 - Guide vs. System
 - Constellation File overview (executables only)
@@ -140,13 +172,15 @@ Upload that file into [Founderpath](https://founderpath.com) with the following 
     {
       id: 'w5-move6',
       title: 'Move 6 — (Optional) Deepsite Quick Page',
-      hint: 'Instruction',
-      content: `Optional: Spin up a quick landing page aligned to your Visual DNA.`,
+      hint: 'Website',
+      content: `Optional: Spin up a quick landing page aligned to your BCF using Deepsite.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Landing page elements",
-          prompt: `Elements:
+          title: "Landing Page Creation",
+          prompt: `Optional: Spin up a quick landing page aligned to your BCF. Take the entire file and paste it into Deepsite.
+
+Build an award-winning website with high-end cinematic level polish (no corny visuals, tacky effects) with the following elements:
 - Hero H1 (≤7 words)
 - Subhead (≤18 words)
 - 3 short benefits (≤6 words each)
