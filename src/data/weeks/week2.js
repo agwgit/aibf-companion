@@ -37,7 +37,7 @@ Create a clear, logical flow that shows the customer journey from need to satisf
       id: 'w2-move2',
       title: 'Move 2 — Mermaid.js Diagram',
       hint: 'Visualization',
-      content: `Convert your product loop into a simple Mermaid.js diagram showing customer flow and decision points.`,
+      content: `Convert your product loop into a simple Mermaid.js diagram to visualize the customer flow.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -83,8 +83,8 @@ This should sound like my brand and be memorable enough to use in presentations.
     {
       id: 'w2-move4',
       title: 'Move 4 — Trade-offs in Positioning',
-      hint: 'Analysis',
-      content: `Identify the key trade-offs in your product positioning to understand your competitive stance.`,
+      hint: 'Decisions',
+      content: `Identify the key trade-offs in your product positioning to clarify your competitive stance.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -106,8 +106,8 @@ Include 2-3 major positioning forks that define my competitive stance.
     {
       id: 'w2-move5',
       title: 'Move 5 — Identify Competitors',
-      hint: 'Research',
-      content: `Identify your 3 most relevant competitors: direct, indirect, and aspirational.`,
+      hint: 'Landscape',
+      content: `Identify your 3 most relevant competitors across direct, indirect, and aspirational categories.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -133,18 +133,17 @@ Be specific - no generic categories like "all consulting firms."
       id: 'w2-move6',
       title: 'Move 6 — Competitor Comparison Table',
       hint: 'Analysis',
-      content: `Create a comprehensive 4-column competitor comparison table including honest assessments.`,
+      content: `Create a comprehensive competitor comparison table to analyze strengths and weaknesses.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Competitive Analysis Table",
+          title: "Competitive Analysis Grid",
           prompt: `Create a 4-column competitor comparison table:
 
 | Feature/Aspect | My Brand | [Competitor 1] | [Competitor 2] | [Competitor 3] |
 |----------------|----------|----------------|----------------|----------------|
 | Core Offering | | | | |
 | Target Market | | | | |
-| Pricing Model | | | | |
 | Key Strength | | | | |
 | Main Weakness | | | | |
 | Brand Voice | | | | |
@@ -160,7 +159,7 @@ Fill this out honestly - include where competitors are stronger than me.
       id: 'w2-move7',
       title: 'Move 7 — Distinctiveness Lines',
       hint: 'Differentiation',
-      content: `Write distinctiveness lines for each aspect of your competitor comparison in your brand voice.`,
+      content: `Write distinctiveness lines for each competitive dimension in your brand voice.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -182,11 +181,11 @@ Keep each line under 25 words.
       id: 'w2-move8',
       title: 'Move 8 — Honest Assessment (2 lines)',
       hint: 'Reality Check',
-      content: `Write a two-line honest assessment of your competitive strength and gap.`,
+      content: `Write a two-line honest assessment of your competitive position.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Competitive Assessment",
+          title: "Competitive Reality Check",
           prompt: `Write a two-line honest assessment:
 
 Line 1 - My Competitive Strength
@@ -202,11 +201,11 @@ Each 15-25 words, confident but realistic.
       id: 'w2-move9',
       title: 'Move 9 — Internal Reality Check Memo',
       hint: 'Strategy',
-      content: `Write a 3-paragraph internal reality check memo covering current position, market reality, and strategic implications.`,
+      content: `Write an internal reality check memo that addresses current position, market reality, and strategic implications.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Strategic Reality Check",
+          title: "Strategic Reality Memo",
           prompt: `Write a 3-paragraph internal reality check memo:
 
 Paragraph 1 - Current Position
@@ -223,7 +222,7 @@ Direct, actionable, in my brand voice.
       id: 'w2-move10',
       title: 'Move 10 — Punchy Headlines',
       hint: 'Synthesis',
-      content: `Compress your reality check memo into 5 punchy headlines.`,
+      content: `Compress your reality check memo into 5 punchy headlines for quick reference.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -244,7 +243,7 @@ Direct, actionable, in my brand voice.
       id: 'w2-move11',
       title: 'Move 11 — Competitive Risk Metaphors',
       hint: 'Visualization',
-      content: `Create 2 metaphors that capture your biggest competitive risks.`,
+      content: `Create metaphors that capture your biggest competitive risks for clearer understanding.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -262,7 +261,7 @@ Risk Metaphor 2: "Our position in the market is like..."
       id: 'w2-move12',
       title: 'Move 12 — Strategy Presentation Slide Headers',
       hint: 'Framework',
-      content: `Create 8 slide headers for a competitive strategy presentation.`,
+      content: `Create slide headers for a competitive strategy presentation to organize your insights.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -279,7 +278,7 @@ Slide 8: ...
     {
       id: 'w2-move13',
       title: 'Move 13 — Primary Strategy Seal',
-      hint: 'Branding',
+      hint: 'Distinction',
       content: `Create your primary Strategy Seal - a 5-7 word phrase that captures your competitive distinction.`,
       hasPrompts: false,
       copyablePrompts: [
@@ -297,7 +296,7 @@ Try 3 versions, then pick the strongest.
       id: 'w2-move14',
       title: 'Move 14 — Alternate Strategy Seals',
       hint: 'Variations',
-      content: `Create 3 alternate versions of your Strategy Seal with different tones.`,
+      content: `Create alternate versions of your Strategy Seal with different tones for various contexts.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -316,7 +315,7 @@ Try 3 versions, then pick the strongest.
       id: 'w2-move15',
       title: 'Move 15 — Strategy Seal Badge',
       hint: 'Visual',
-      content: `Format your Strategy Seal as a visual badge with different design options.`,
+      content: `Format your Strategy Seal as a visual badge for brand applications.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -337,7 +336,7 @@ Options:
       id: 'w2-move16',
       title: 'Move 16 — Strategy Seal Icons',
       hint: 'Symbols',
-      content: `Suggest simple icons/symbols that could represent your Strategy Seal.`,
+      content: `Suggest simple icons or symbols that could represent your Strategy Seal visually.`,
       hasPrompts: false,
       copyablePrompts: [
         {

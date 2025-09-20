@@ -49,8 +49,10 @@ Please acknowledge this context and ask me 3 specific questions that will help y
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Brand Archetype Analysis",
-          prompt: `Based on my business context, help me identify my brand archetype:
+          title: "Archetype Discovery",
+          prompt: `If I don't have a complete Brand Scanner, help me create a quick brand foundation:
+
+Based on my business context, help me identify my brand archetype:
 
 1. Analyze my business description, values, and target audience
 2. Suggest 2-3 brand archetypes that could fit my brand
@@ -90,13 +92,15 @@ Use my answers to suggest an initial brand voice direction.
     {
       id: 'w1-move4',
       title: 'Move 4 — Brand Essence Metaphors',
-      hint: 'Visualization',
-      content: `Define your brand essence using concrete objects and metaphors to translate into specific voice traits.`,
+      hint: 'Metaphors',
+      content: `Define your brand essence using concrete objects and metaphors to clarify personality traits.`,
       hasPrompts: false,
       copyablePrompts: [
         {
           title: "Metaphor Mapping",
-          prompt: `If my brand were:
+          prompt: `Now let's define my brand essence using concrete objects and metaphors:
+
+If my brand were:
 1. An animal, what would it be and why?
 2. A car, what make/model would it be?
 3. A person at a party, how would they behave?
@@ -112,8 +116,8 @@ For each answer, explain how this metaphor translates into specific voice and pe
     {
       id: 'w1-move5',
       title: 'Move 5 — Archetypal Energies',
-      hint: 'Energy',
-      content: `Explore how your brand could embody different archetypal energies: Hero, Creator, and Outlaw.`,
+      hint: 'Energies',
+      content: `Explore how your brand could embody different archetypal energies to find the most authentic fit.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -137,12 +141,12 @@ For each energy:
     {
       id: 'w1-move6',
       title: 'Move 6 — Ransom Letter',
-      hint: 'Creative',
-      content: `Write a playful "ransom letter" from your brand - demanding something important from your audience in your authentic voice.`,
+      hint: 'Voice Test',
+      content: `Write a playful "ransom letter" from your brand to test voice authenticity and engagement.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Ransom Letter Exercise",
+          title: "Ransom Letter Challenge",
           prompt: `Write a "ransom letter" from my brand - a message where I'm demanding something important from my audience, but in my authentic brand voice.
 
 Scenario: I'm "holding hostage" a valuable piece of content, service, or insight that my audience desperately wants. Write a playful but firm message demanding they take a specific action to "get it back."
@@ -161,12 +165,12 @@ Requirements:
     {
       id: 'w1-move7',
       title: 'Move 7 — Runaway Letter',
-      hint: 'Creative',
-      content: `Write a "runaway letter" from your brand - explaining why you're leaving/taking a break in your authentic voice.`,
+      hint: 'Voice Test',
+      content: `Write a "runaway letter" to practice communicating difficult messages while maintaining brand voice.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Runaway Letter Exercise",
+          title: "Runaway Letter Challenge",
           prompt: `Write a "runaway letter" from my brand - a message where I'm explaining why I'm leaving/taking a break, but in my authentic brand voice.
 
 Scenario: I need to communicate a temporary absence, service pause, or major change to my audience. Write a message that explains the situation while maintaining my brand personality.
@@ -186,12 +190,12 @@ Requirements:
     {
       id: 'w1-move8',
       title: 'Move 8 — Retirement Letter',
-      hint: 'Creative',
-      content: `Write a "retirement letter" from your brand - a final farewell message that captures your brand's essence.`,
+      hint: 'Voice Test',
+      content: `Write a "retirement letter" to practice emotional communication while staying true to brand voice.`,
       hasPrompts: false,
       copyablePrompts: [
         {
-          title: "Retirement Letter Exercise",
+          title: "Retirement Letter Challenge",
           prompt: `Write a "retirement letter" from my brand - a final message to my audience, but in my authentic brand voice.
 
 Scenario: I'm announcing the end of my business/service and saying goodbye to my community. Write a heartfelt farewell message that captures my brand's essence one last time.
@@ -212,7 +216,7 @@ Requirements:
       id: 'w1-move9',
       title: 'Move 9 — Voice Matrix',
       hint: 'Framework',
-      content: `Create a comprehensive voice matrix with characteristics, do's and don'ts, and voice modulation guidelines.`,
+      content: `Create a comprehensive voice matrix that defines your brand's communication guidelines.`,
       hasPrompts: false,
       copyablePrompts: [
         {
@@ -244,7 +248,7 @@ Voice Modulation:
       id: 'w1-move10',
       title: 'Move 10 — Sample Social Posts (Extra Credit)',
       hint: 'Application',
-      content: `Apply your established brand voice to create sample social media posts across different platforms and content types.`,
+      content: `Apply your established brand voice to create sample social media posts across different platforms.`,
       hasPrompts: false,
       copyablePrompts: [
         {
